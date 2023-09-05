@@ -1,0 +1,17 @@
+---
+version: "3"
+
+services:
+    gen-anim:
+        image: steven/json-parser:1.0
+        volumes:
+            - ./test:/data
+        user: "501:20"
+        command: generate_animals.py /data/animals.json
+    read-anim:
+        image: steven/json-parser:1.0
+        volumes:
+            - ./test:/data
+        user: "501:20"
+        command: read_animals.py /data/animals.json
+...

@@ -1,0 +1,144 @@
+{
+  "animals": [
+    {
+      "head": "bull",
+      "body": "whole-gull",
+      "arms": 3,
+      "legs": 7,
+      "tail": 10
+    },
+    {
+      "head": "snake",
+      "body": "crisp-hound",
+      "arms": 9,
+      "legs": 10,
+      "tail": 19
+    },
+    {
+      "head": "raven",
+      "body": "immune-bull",
+      "arms": 8,
+      "legs": 6,
+      "tail": 14
+    },
+    {
+      "head": "snake",
+      "body": "quick-beetle",
+      "arms": 9,
+      "legs": 3,
+      "tail": 12
+    },
+    {
+      "head": "raven",
+      "body": "upward-orca",
+      "arms": 8,
+      "legs": 12,
+      "tail": 20
+    },
+    {
+      "head": "snake",
+      "body": "driven-snipe",
+      "arms": 9,
+      "legs": 7,
+      "tail": 16
+    },
+    {
+      "head": "bull",
+      "body": "saved-hippo",
+      "arms": 3,
+      "legs": 8,
+      "tail": 11
+    },
+    {
+      "head": "snake",
+      "body": "loved-mole",
+      "arms": 2,
+      "legs": 3,
+      "tail": 5
+    },
+    {
+      "head": "bunny",
+      "body": "usable-python",
+      "arms": 2,
+      "legs": 9,
+      "tail": 11
+    },
+    {
+      "head": "bull",
+      "body": "set-cow",
+      "arms": 8,
+      "legs": 3,
+      "tail": 11
+    },
+    {
+      "head": "bunny",
+      "body": "sound-jay",
+      "arms": 5,
+      "legs": 10,
+      "tail": 15
+    },
+    {
+      "head": "raven",
+      "body": "kind-weasel",
+      "arms": 10,
+      "legs": 6,
+      "tail": 16
+    },
+    {
+      "head": "lion",
+      "body": "worthy-swift",
+      "arms": 5,
+      "legs": 6,
+      "tail": 11
+    },
+    {
+      "head": "raven",
+      "body": "cool-ram",
+      "arms": 6,
+      "legs": 3,
+      "tail": 9
+    },
+    {
+      "head": "raven",
+      "body": "prime-egret",
+      "arms": 10,
+      "legs": 4,
+      "tail": 14
+    },
+    {
+      "head": "bull",
+      "body": "ideal-panda",
+      "arms": 6,
+      "legs": 4,
+      "tail": 10
+    },
+    {
+      "head": "lion",
+      "body": "deep-monkey",
+      "arms": 10,
+      "legs": 9,
+      "tail": 19
+    },
+    {
+      "head": "bunny",
+      "body": "better-macaw",
+      "arms": 5,
+      "legs": 7,
+      "tail": 12
+    },
+    {
+      "head": "lion",
+      "body": "ideal-thrush",
+      "arms": 9,
+      "legs": 11,
+      "tail": 20
+    },
+    {
+      "head": "raven",
+      "body": "usable-lark",
+      "arms": 2,
+      "legs": 10,
+      "tail": 12
+    }
+  ]
+}
