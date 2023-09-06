@@ -29,5 +29,82 @@ cd /HW/hw2
 Once there, run 
 
 ```bash
+python3 generate_animals.py animals.json
+```
+
+This will generate a json file that holds data on the 20 animals you just created. To check that the program ran smoothly, type:
+
+```bash
+cat animals.json
+```
+
+You should see the first couple of lines as:
+
+{
+  "animals": [
+    {
+      "head": "bull",
+      "body": "snake-sponge",
+      "arms": 10,
+      "legs": 3,
+      "tail": 13
+    },
+
+Next, you can run
+
+```bash
+python3 read_animals.py animals.json
+```
+
+To see the summary statistics for our data, the output should read:
+
+{'head_count': {'snake': 3, 'bull': 3, 'lion': 6, 'raven': 5, 'bunny': 3}, 'avg_arms': 6.4, 'avg_legs': 7.35, 'avg_tails': 13.75}
+    
+## Building a docker image with the given dockerfile
+
+First thing you should make sure before running the commands is that your Docker is open and running
+
+then run the following command:
+
+```bash
+docker build -t stevendiep/hw2:1.0 .
+```
+
+This will build our docker image, once you build the image, you can run it and type the interactive commands needed to run the code in our container
+
+## Running our code in the interactive container
+
+```bash
+docker run --rm -it stevendiep/hw2:1.0 /bin/bash
+```
+
+Once in the interactive state, run:
+
+```bash
 generate_animals.py animals.json
 ```
+
+```bash
+read_animals.py animals.json
+```
+
+This will generate the 20 animals and read the summary statstics in that order within the interactive prompt
+
+
+## How to run unit tests
+
+Navigate to the test folder of hw2
+
+Once you are in the folder, you can run
+
+```bash 
+python3 test_read_animals.py
+```
+
+To check if our unit tests have passed
+
+
+
+
+
+
