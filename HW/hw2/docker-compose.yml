@@ -1,0 +1,18 @@
+---
+version: "3"
+
+services:
+    gen-anim:
+        image: stevend/hw2:1.0
+        volumes:
+            - ./output:/data
+        user: "501:20"
+        command: generate_animals.py /data/animals.json
+    read-anim:
+        image: stevend/hw2:1.0
+        volumes:
+            - ./output:/data
+        user: "501:20"
+        command: read_animals.py /data/animals.json
+...
+

@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import json
 import random
+import sys
 
 def generate_summary(data):
     stats = {};
@@ -19,7 +22,7 @@ def generate_summary(data):
     return stats
 
 
-with open('animals.json', 'r') as f:
+with open(sys.argv[1], 'r') as f:
     data = json.load(f)
 
 animals = data['animals']

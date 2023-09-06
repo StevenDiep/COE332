@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
+
 import json
 import random
 import argparse
 import petname
-
+import sys
 
 #Pre set data needed to generate the animal
 data = {}
@@ -22,5 +24,5 @@ for i in range(20):
     data['animals'].append(animal)
 
 #Dumping data into a json file
-with open('animals.json', 'w') as out:
+with open(sys.argv[1], 'w') as out:
     json.dump(data, out, indent=2)
