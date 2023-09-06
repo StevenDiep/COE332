@@ -97,11 +97,17 @@ Navigate to the test folder of hw2
 
 Once you are in the folder, you can run
 
+```bash
+python3 generate_animal.py
+```
+
+To generate the animals.json file needed for our tests to have data for. Then you can run the following command to run the actual tests
+
 ```bash 
 python3 test_read_animals.py
 ```
 
-To check if our unit tests have passed
+Our ouput should say OK indicating that our unit tests have indeed passed
 
 
 
