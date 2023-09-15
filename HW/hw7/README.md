@@ -1,7 +1,7 @@
 # Homework 7
 Homework 7 focuses on putting together a flask api, redis database, and a basic worker together in order to make a basic system. Spent time creating flask and worker images, pushing them to docker, and then letting the kubernetes deployments pull these images to create our pods
 
-#Part A
+# Part A
 
 1. Updated the dockerfile for the flask application and worker for our image and ultimately the kubenetes pods. Made sure that the flask and worker used environment variables for their redis service IP instead of hardcoding the IP address directly into the code.
 
@@ -82,7 +82,14 @@ curl <flask_service_IP>:5000/jobs/<paste uid here>
 
 You should now see that the job is now in progress or completed
 
+# Part B
+
+1. Added the env change in the worker deployment yml file
+
+2. In the code, we added the pod's personal IP address to the output of the complete status
 
 
+# Part C
 
-
+Use the same curl commands to post and check on the jobs
+When you have two workers and 10 jobs posted, each worker worked on 5 jobs
