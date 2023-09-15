@@ -13,6 +13,7 @@ docker build -t stevendiep/test-flask:1.0 -f Dockerfile.api .
 
 ```bin
 docker build -t stevendiep/test-worker:1.0 -f Dockerfile.worker .
+```
 
 If we wanted to run the images, use the following commands. Although in this case the containters won't work since we have our IP addresses pointing to the redis service IP instead of the 127.0.0.1 host IP
 
@@ -20,9 +21,9 @@ If we wanted to run the images, use the following commands. Although in this cas
 docker run --rm -d -p 5000:5000 stevendiep/test-flask:1.0
 ```
 
-'''bin
+```bin
 docker run stevendiep/test-worker:1.0
-'''
+```
 
 2. In this part, we change the spec:spec:containers:image: and put in the image we want to pull. For the api and workers, pull their respective images we created in step one.
 
@@ -34,6 +35,7 @@ kubectl apply -f stevend-test-flask-deployment
 
 ```bin
 kubectl apply -f stevend-test-worker-deployment
+```
 
 3. We now verify that the applications in the system are communicating with each other correctly. 
 
@@ -51,6 +53,7 @@ We now need to exec into our python debug pod to check our curl statements, use 
 
 ```bin
 kubectl exec -it <your debug pod name> -- /bin/bash
+```
 
 When you are successfully in, you should see the root prompt
 
