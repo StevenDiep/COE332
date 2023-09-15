@@ -1,0 +1,34 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stevend-test-redis-deployment
+  labels:
+    app: stevend-test-redis
+    username: stevend
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stevend-test-redis
+  template:
+    metadata:
+      labels:
+        app: stevend-test-redis
+        username: stevend
+        env: test
+    spec:
+      containers:
+        - name: stevend-test-redis
+          image: redis:5.0.0
+          ports:
+            - name: database
+              containerPort: 6379
+          volumeMounts:
+          - name: stevend-test-pvc-data
+            mountPath: "/data"
+      volumes:
+      - name: stevend-test-pvc-data
+        persistentVolumeClaim:
+          claimName: stevend-test-pvc-data
